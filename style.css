@@ -1,5 +1,10 @@
 body{
     background-color: #D8DFE8;
+    font-family: 'Inter', sans-serif;
+}
+
+input, p, textarea{
+    font-family: 'Inter', sans-serif;
 }
 
 /* section, div, img, p, input{
@@ -13,7 +18,7 @@ header img{
 
 main{
     width: 1440px;
-    height: 93vh;
+    height: 800px;
     margin: auto;
     padding-top: 40px;
     display: flex;
@@ -49,6 +54,10 @@ main{
     opacity: 1;
 }
 
+.text-input:focus{
+    outline:none;
+}
+
 .bottom{
     display: flex;
     justify-content: space-between;
@@ -73,9 +82,9 @@ input[type="submit"]:hover{
     border: darkblue;
 }
 
-.boton-desencriptar{
+.boton-desencriptar, .button-copy{
     color: darkblue;
-    background-color: rgb(212, 216, 228);
+    background-color: rgba(0,0,0,0);
     border-color: darkblue;
 }
 
@@ -112,7 +121,7 @@ input[type="submit"]:hover{
     }
 }
 
-.card p{
+.no-text p{
     text-align: center;
     padding-top: 40px;
     width: 336px;
@@ -127,3 +136,35 @@ input[type="submit"]:hover{
 .descripcion{
     font-size: 16;
 }
+.yes-text{
+    height: 100%;
+}
+
+.encrypted{
+    text-align: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-copy{
+    margin: 0 32px 22px 32px;
+    height: 66px;
+    border-radius: 24px;
+}
+
+.encrypted-text{
+    margin: 30px;
+    color: darkblue;
+    font-size: 22px;
+    overflow: scroll;
+    height: 80%;
+}
+
+@media (max-width: 768px) {
+    main{
+        flex-direction: column;
+    }
+}
+
