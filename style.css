@@ -7,18 +7,14 @@ input, p, textarea{
     font-family: 'Inter', sans-serif;
 }
 
-/* section, div, img, p, input{
-    border: red solid 1px;
-} */
-
 header img{
     margin: 40px 0 0 40px;
     position: absolute;
 }
 
 main{
-    width: 1440px;
-    height: 800px;
+    width: 1200px;
+    height: 700px;
     margin: auto;
     padding-top: 40px;
     display: flex;
@@ -69,16 +65,15 @@ input[type="submit"]:hover{
 }
 
 .bottom input{
-    margin:0 auto 0 auto;
-    flex: 1;
-    margin: 0 20px;
     height: 66px;
+    width: 340px;
     border-radius: 24px;
 }
 
 .boton-encriptar{
     color: white;
     background-color: darkblue;
+    font-size: 16px;
     border: darkblue;
 }
 
@@ -86,6 +81,7 @@ input[type="submit"]:hover{
     color: darkblue;
     background-color: rgba(0,0,0,0);
     border-color: darkblue;
+    font-size: 16px;
 }
 
 
@@ -103,6 +99,10 @@ input[type="submit"]:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.card p{
+    color: rgb(118, 118, 118);
 }
 
 .muneco{
@@ -130,12 +130,13 @@ input[type="submit"]:hover{
 
 .titulo{
     font-size: 24px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .descripcion{
     font-size: 16;
 }
+
 .yes-text{
     height: 100%;
 }
@@ -162,9 +163,51 @@ input[type="submit"]:hover{
     height: 80%;
 }
 
-@media (max-width: 768px) {
+.no-render{
+    display: none;
+}
+
+/* IPAD DISPLAY SIZE */
+
+@media (max-width: 1300px) {
     main{
         flex-direction: column;
+        height: auto;
+        width: 768px;
     }
+
+    .izquierda{
+        width: auto;
+        height: 900px;
+    }
+
+    .muneco{
+        display: none;
+    }
+
+    .interface{
+        margin: 0 30px;
+    }
+
+    .derecha{
+        height: auto;
+        width: auto;
+    }
+    
+    .card{
+        width: auto;
+        margin: 0 30px 30px 30px;
+    }
+
+    .no-text p{
+        width: auto;
+        padding: 20px 0;
+    }
+
+    .encrypted-text{
+        height: 350px;
+    }
+    
 }
+
 
