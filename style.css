@@ -139,10 +139,11 @@ input[type="submit"]:hover{
 
 .yes-text{
     height: 100%;
+    width: 100%;
 }
 
 .encrypted{
-    text-align: center;
+    text-align:left;
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -210,4 +211,33 @@ input[type="submit"]:hover{
     
 }
 
+/* PHONE DISPLAY SIZE */
 
+@media (max-width: 740px) {
+    main{
+        flex-direction: column;
+        height: auto;
+        width: 375px;
+    }
+
+    header img{
+        margin: 24px 0 0 0;
+    }
+
+    .interface{
+        margin: 0 16px
+    }
+
+    .bottom{
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .bottom input{
+        margin: 10px 0;
+    }
+
+    .card{
+        margin: 0 16px 30px 16px;
+    }
+}
