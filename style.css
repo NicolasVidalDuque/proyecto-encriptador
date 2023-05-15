@@ -59,8 +59,11 @@ main{
     justify-content: space-between;
 }
 
-input[type="submit"]:hover{
+input[type="button"]:hover{
     cursor:pointer;
+}
+
+input[type="button"]:active{
     scale: 1.02;
 }
 
@@ -84,8 +87,6 @@ input[type="submit"]:hover{
     font-size: 16px;
 }
 
-
-
 .derecha{
     width: 30%;
 }
@@ -106,7 +107,7 @@ input[type="submit"]:hover{
 }
 
 .muneco{
-    padding-top: 192px;
+    padding-top: 40%;
 }
 
 @keyframes jump {
@@ -160,8 +161,8 @@ input[type="submit"]:hover{
     margin: 30px;
     color: darkblue;
     font-size: 22px;
-    overflow: scroll;
     height: 80%;
+    overflow-wrap: normal;
 }
 
 .no-render{

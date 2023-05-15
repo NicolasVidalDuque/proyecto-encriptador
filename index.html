@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/Logo.png" type="image/x-icon">
-    <script src="index.js"></script>
 </head>
 <body>
     <header>
@@ -26,14 +25,14 @@
                     Solo letras minúsculas y sin acentos
                 </p>
                 <div class="bottom">
-                    <input type="submit" value="Encriptar" class="boton-encriptar">
-                    <input type="submit" value="Desencriptar" class="boton-desencriptar">
+                    <input type="button" value="Encriptar" class="boton-encriptar">
+                    <input type="button" value="Desencriptar" class="boton-desencriptar">
                 </div>
             </form>    
         </section>
         <section class="derecha">
             <div class="card">
-                <div class="no-text no-render">
+                <div class="no-text">
                     <img class="muneco" src="images/Muñeco.png" alt="Munheco">
                     <p class="titulo">
                         Ningún mensaje fue encontrado
@@ -42,16 +41,15 @@
                         Ingresa el texto que desees encriptar o desencriptar.
                     </p>
                 </div>
-                <div class="yes-text">
+                <div class="yes-text no-render">
                     <form action="" class="encrypted">
-                        <p class="encrypted-text">aoeu
-                        </p>
-                        <input class="button-copy" type="submit" value="Copy">
+                        <p class="encrypted-text"></p>
+                        <input class="button-copy" type="button" value="Copy">
                     </form>
                 </div>
             </div>
         </section>
     </main>
-    
+    <script src="index.js"></script>
 </body>
 </html>
